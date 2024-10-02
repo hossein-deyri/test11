@@ -1,0 +1,120 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.layout {
+  display: flex;
+  height: 100vh;
+  width: 100%;
+  background-color: #1f1f1f;
+  padding: 16px;
+  font-family: "Vazirmatn", sans-serif;
+  position: relative;
+}
+
+.image-overlay {
+  flex: 1;
+  background-image: url("../image/background.png");
+  background-size: cover;
+  border-radius: 16px;
+
+  @media screen and (max-width: 768px) {
+    flex: 0;
+  }
+}
+
+.form-container {
+  display: flex;
+  flex-wrap: wrap;
+  flex: 1.2;
+  justify-content: center;
+  align-items: center;
+
+  .product-logo {
+    width: 120px;
+  }
+
+  .form-login {
+    width: 500px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0px 30px;
+
+    @media screen and (max-width: 768px) {
+      width: 100%;
+    }
+  }
+
+  .login-form {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+
+    .phone-number {
+      height: 56px;
+      background-color: #151518;
+      color: #ffffff;
+      padding-left: 10px;
+      margin-top: 16px;
+      font-size: 14px;
+      font-weight: 400;
+    }
+
+    .submit-sms {
+      height: 56px;
+      background-color: #e21622;
+      color: #ffffff;
+      margin-top: 56px;
+      cursor: pointer;
+    }
+
+    .button {
+      width: 100%;
+      border: none;
+      outline: none;
+      box-shadow: none;
+      border-radius: 10px;
+      font-size: 16px;
+      line-height: 25px;
+      font-family: "Vazirmatn", sans-serif;
+    }
+
+    .submit-call {
+      height: 56px;
+      border: 1px solid #e21622;
+      background-color: transparent;
+      margin-top: 16px;
+      color: #e21622;
+      cursor: pointer;
+    }
+
+    h2 {
+      margin-bottom: 40px;
+      margin-top: 60px;
+      text-align: end;
+      width: 100%;
+      color: #ffffff;
+    }
+
+    label {
+      text-align: end;
+      width: 100%;
+      color: #ffffff;
+    }
+
+    .description {
+      font-size: 14px;
+      line-height: 22px;
+      color: #9898a0;
+      margin-top: 60px;
+      text-align: end;
+      > .other-product {
+        color: #ffffff;
+      }
+    }
+  }
+}
